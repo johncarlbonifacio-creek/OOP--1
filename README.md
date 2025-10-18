@@ -1,4 +1,4 @@
-# OOP--1
+# OOP-1
 # Library Management System
 
 This is my activity for our programming subject. It’s a simple library system made in Java where users can login, view books, borrow, and return them. Admin can also manage users, books, and see transactions.
