@@ -59,20 +59,29 @@ public class LibrarySystem {
 
     public void displayMenu() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to the Library Management System");
-        System.out.print("Username: ");
-        String username = sc.nextLine();
-        System.out.print("Password: ");
-        String password = sc.nextLine();
+        int attempts = 3;
 
-        loggedInUser = authenticate(username, password);
+        while (attempts > 0) {
+            System.out.println("Welcome to the Library Management System");
+            System.out.print("Username: ");
+            String username = sc.nextLine();
+            System.out.print("Password: ");
+            String password = sc.nextLine();
 
-        if (loggedInUser == null) {
-            System.out.println("Invalid username or password.");
-            return;
+            loggedInUser = authenticate(username, password);
+
+            if (loggedInUser != null) {
+                System.out.println("Login successful! Welcome, " + loggedInUser.name);
+                break;
+            } else {
+                attempts--;
+                System.out.println("Invalid username or password. Attempts left: " + attempts);
+                if (attempts == 0) {
+                    System.out.println("Too many failed attempts. Exiting program.");
+                    return;
+                }
+            }
         }
-
-        System.out.println("Login successful! Welcome, " + loggedInUser.name);
 
         int choice;
         do {
@@ -130,4 +139,4 @@ public class LibrarySystem {
         }
         System.out.println("Book not found or already returned.");
     }
-                  }
+}
