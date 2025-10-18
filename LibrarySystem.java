@@ -197,14 +197,18 @@ public class LibrarySystem {
             switch (choice) {
                 case 1:
                     viewBooks();
+                    break;
                 case 2:
                     borrowBook();
+                    break;
                 case 3:
                     returnBook();
+                    break;
                 case 4:
-                    {}
+                    break;
                 default:
                     System.out.println("Invalid choice.");
+                    break;
             }
         }
     }
@@ -223,16 +227,21 @@ public class LibrarySystem {
             switch (choice) {
                 case 1:
                     viewBooks();
+                    break;
                 case 2:
                     manageUsers();
+                    break;
                 case 3:
                     manageBooks();
+                    break;
                 case 4:
                     displayTransactions();
+                    break;
                 case 5:
-                    {}
+                    break;
                 default:
                     System.out.println("Invalid choice.");
+                    break;
             }
         }
     }
@@ -251,16 +260,21 @@ public class LibrarySystem {
             switch (choice) {
                 case 1:
                     addUser();
+                    break;
                 case 2:
                     updateUser();
+                    break;
                 case 3:
                     deleteUser();
+                    break;
                 case 4:
                     displayUsers();
+                    break;
                 case 5:
-                    {}
+                    break;
                 default:
                     System.out.println("Invalid choice.");
+                    break;
             }
         }
     }
@@ -332,16 +346,21 @@ public class LibrarySystem {
             switch (choice) {
                 case 1:
                     addBook();
+                    break;
                 case 2:
                     updateBook();
+                    break;
                 case 3:
                     deleteBook();
+                    break;
                 case 4:
                     viewBooks();
+                    break;
                 case 5:
-                    {}
+                    break;
                 default:
                     System.out.println("Invalid choice.");
+                    break;
             }
         }
     }
