@@ -195,11 +195,16 @@ public class LibrarySystem {
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
-                case 1 -> viewBooks();
-                case 2 -> borrowBook();
-                case 3 -> returnBook();
-                case 4 -> {}
-                default -> System.out.println("Invalid choice.");
+                case 1:
+                    viewBooks();
+                case 2:
+                    borrowBook();
+                case 3:
+                    returnBook();
+                case 4:
+                    {}
+                default:
+                    System.out.println("Invalid choice.");
             }
         }
     }
@@ -216,17 +221,22 @@ public class LibrarySystem {
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
-                case 1 -> viewBooks();
-                case 2 -> manageUsers();
-                case 3 -> manageBooks();
-                case 4 -> displayTransactions();
-                case 5 -> {}
-                default -> System.out.println("Invalid choice.");
+                case 1:
+                    viewBooks();
+                case 2:
+                    manageUsers();
+                case 3:
+                    manageBooks();
+                case 4:
+                    displayTransactions();
+                case 5:
+                    {}
+                default:
+                    System.out.println("Invalid choice.");
             }
         }
     }
 
-    // --- USER MANAGEMENT (Admin) ---
     void manageUsers() {
         int choice = 0;
         while (choice != 5) {
@@ -239,12 +249,18 @@ public class LibrarySystem {
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
-                case 1 -> addUser();
-                case 2 -> updateUser();
-                case 3 -> deleteUser();
-                case 4 -> displayUsers();
-                case 5 -> {}
-                default -> System.out.println("Invalid choice.");
+                case 1:
+                    addUser();
+                case 2:
+                    updateUser();
+                case 3:
+                    deleteUser();
+                case 4:
+                    displayUsers();
+                case 5:
+                    {}
+                default:
+                    System.out.println("Invalid choice.");
             }
         }
     }
@@ -302,7 +318,6 @@ public class LibrarySystem {
         }
     }
 
-    // --- BOOK MANAGEMENT (Admin) ---
     void manageBooks() {
         int choice = 0;
         while (choice != 5) {
@@ -315,12 +330,18 @@ public class LibrarySystem {
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
-                case 1 -> addBook();
-                case 2 -> updateBook();
-                case 3 -> deleteBook();
-                case 4 -> viewBooks();
-                case 5 -> {}
-                default -> System.out.println("Invalid choice.");
+                case 1:
+                    addBook();
+                case 2:
+                    updateBook();
+                case 3:
+                    deleteBook();
+                case 4:
+                    viewBooks();
+                case 5:
+                    {}
+                default:
+                    System.out.println("Invalid choice.");
             }
         }
     }
@@ -367,7 +388,6 @@ public class LibrarySystem {
         System.out.println("Book deleted if found.");
     }
 
-    // --- COMMON FEATURES ---
     void viewBooks() {
         System.out.println("\nBook List:");
         for (Book b : books) {
