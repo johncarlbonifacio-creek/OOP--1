@@ -1,0 +1,3 @@
+U001,Cris John,password123,user
+U002,John Carl,pass123,user
+A001,Admin,admin123,admin
