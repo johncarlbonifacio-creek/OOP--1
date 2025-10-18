@@ -90,7 +90,7 @@ public class LibrarySystem {
     public void run() {
         System.out.println("Welcome to the Library Management System");
         System.out.println("-----------------------------------------");
-        System.out.println("Please log in to continue.");
+        System.out.println("Please login to continue...");
 
         try {
             loadFiles();
@@ -205,6 +205,7 @@ public class LibrarySystem {
                     returnBook();
                     break;
                 case 4:
+                    system.out.println("Exiting...")
                     break;
                 default:
                     System.out.println("Invalid choice.");
@@ -238,6 +239,7 @@ public class LibrarySystem {
                     displayTransactions();
                     break;
                 case 5:
+                    system.out.println("Exiting...")
                     break;
                 default:
                     System.out.println("Invalid choice.");
@@ -271,6 +273,7 @@ public class LibrarySystem {
                     displayUsers();
                     break;
                 case 5:
+                    system.out.println("Exiting...")
                     break;
                 default:
                     System.out.println("Invalid choice.");
@@ -357,6 +360,7 @@ public class LibrarySystem {
                     viewBooks();
                     break;
                 case 5:
+                    system.out.println("Exiting...")
                     break;
                 default:
                     System.out.println("Invalid choice.");
